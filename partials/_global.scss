@@ -1,0 +1,88 @@
+/* stripping style */
+body, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+ul, 
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, 
+li {
+    list-style: none;
+}
+
+/* root size */
+
+html {
+    font-size: 62.5%;
+    color: #ffffff;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 6.9rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 4.5rem;
+    line-height: 99.8px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 4.0rem;
+    line-height: 5.8px;
+    letter-spacing: 1.3px;
+}
+
+h4 {
+    font-size: 2.5rem;
+    line-height: 58px;
+    letter-spacing: 0.8px;
+}
+
+button {
+    font-size: 2.24rem;
+    line-height: 41.6px;
+}
+
+nav {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 2rem;
+}
+
+i {
+    font-size: 3rem;
+}

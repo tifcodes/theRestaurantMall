@@ -6,10 +6,13 @@
     background: #FFD300;
     padding: 10px;
     border-radius: 50%;
+    height: 10%;
     color: #000000;
+    // margin: 20px
 }
 
-.section-1 li {
+.section-1 ul li {
     display: flex;
     flex-wrap: wrap;
 }
+

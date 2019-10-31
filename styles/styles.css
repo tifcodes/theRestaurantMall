@@ -269,9 +269,10 @@ h1 {
   background: #FFD300;
   padding: 10px;
   border-radius: 50%;
+  height: 10%;
   color: #000000; }
 
-.section-1 li {
+.section-1 ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

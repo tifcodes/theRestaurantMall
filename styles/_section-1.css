@@ -1,5 +1,18 @@
 .section-1 {
   background: #2B331B; }
 
-.section-2 {
-  background: black; }
+.section-1 i {
+  background: #FFD300;
+  padding: 10px;
+  border-radius: 50%;
+  height: 10%;
+  color: #000000; }
+
+.flexChild {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }

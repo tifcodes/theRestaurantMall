@@ -1,0 +1,15 @@
+.section-6 {
+    background: $secondary-background-color;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 50px 0;
+        li {
+            width: calc((100% - 80px) / 3);
+            &:nth-of-type(2) {
+                margin: 0 40px;
+            }   
+        }
+    }
+}
+

@@ -1,0 +1,31 @@
+.section-5{
+    background: $background-color;
+    padding: 100px 0;
+}
+
+.section-5-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-5-image {
+    margin-left: 20px;
+    width: calc(25% - 20px);
+    img {
+        box-shadow: -15px 15px 0px 5px $accent-color;
+    }
+}
+
+.section-5-container {
+    width: calc(75% - 50px);
+    margin-left: 50px;
+    h2 {
+        color: $accent-color;
+        line-height: 5rem;
+    }
+    button {
+        background-color: $secondary-font-color;
+        color: $font-color;
+        
+    }
+}

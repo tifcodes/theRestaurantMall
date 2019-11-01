@@ -5,23 +5,19 @@ header {
     background-repeat: no-repeat;
     background-position: center center;
     position: relative;
-}
-
-a {
-    color: $font-color;
-}
-
-ul {
-    display: flex;
-}
-
-ul li {
-    margin: 50px 25px;
-    border-bottom: 3px solid transparent;
+    ul {
+        display: flex;
+        li {
+            margin: 50px 25px;
+        border-bottom: 3px solid transparent;
+        a {
+            color: $font-color;
+        }
+        }
+    }
 }
 
 h1 {
-    text-transform: uppercase;
     display: inline-flex;
     flex-direction: column;
 }

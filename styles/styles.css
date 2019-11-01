@@ -145,6 +145,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   clip: rect(0 0 0);
   overflow: hidden; }
 
+/* colors */
 /* stripping style */
 body,
 h1,
@@ -170,7 +171,8 @@ html {
   color: #ffffff; }
 
 body {
-  font-family: 'Josefin Sans', sans-serif; }
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400; }
 
 img {
   max-width: 100%;
@@ -188,19 +190,20 @@ h1 {
 
 h2 {
   font-size: 4.5rem;
-  line-height: 99.8px;
+  line-height: 9.98rem;
   font-weight: 400;
   text-transform: uppercase; }
 
 h3 {
   font-size: 4.0rem;
-  line-height: 5.8px;
-  letter-spacing: 1.3px; }
+  line-height: 5.8rem;
+  letter-spacing: 1.3px;
+  text-transform: uppercase; }
 
 h4 {
   font-size: 2.5rem;
-  line-height: 58px;
-  letter-spacing: 0.8px; }
+  line-height: 5.8rem;
+  letter-spacing: 0.8p; }
 
 button {
   font-size: 2.24rem;
@@ -209,11 +212,12 @@ button {
 nav {
   font-size: 2rem;
   font-weight: 700;
-  line-height: 29px;
+  line-height: 2.9rem;
   letter-spacing: 1px; }
 
 p {
-  font-size: 2rem; }
+  font-size: 2rem;
+  line-height: 2.9rem; }
 
 i {
   font-size: 3rem; }
@@ -270,7 +274,7 @@ h1 {
   padding: 10px;
   border-radius: 50%;
   height: 10%;
-  color: #000000; }
+  color: #0F0F0F; }
 
 .section-1 ul li {
   display: -webkit-box;
@@ -281,3 +285,65 @@ h1 {
 
 .section-2 {
   background: #171B0E; }
+
+.article-1,
+.article-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.article-image-1,
+.article-image-2 {
+  position: relative; }
+
+.article-image-1 {
+  top: -50px;
+  left: -100px; }
+
+.article-image-2 {
+  bottom: -50px;
+  right: -100px; }
+
+.article-1 img {
+  -webkit-box-shadow: 15px 15px 0px 5px #FFD300;
+  box-shadow: 15px 15px 0px 5px #FFD300; }
+
+.article-2 img {
+  -webkit-box-shadow: -15px 15px 0px 5px #FFD300;
+  box-shadow: -15px 15px 0px 5px #FFD300; }
+
+.article-container-1,
+.article-container-2 {
+  margin: 50px 30px; }
+
+.article-image-1 {
+  margin-right: 60px; }
+
+.article-image-2 {
+  margin-left: 60px; }
+
+.article-container-1,
+.article-container-2,
+.article-image-1,
+.article-image-2 {
+  width: calc(50% - 60px); }
+
+.read-more {
+  background-color: #FFD300;
+  color: #0F0F0F;
+  border: none;
+  text-transform: uppercase;
+  padding: 5px 10px 3px 10px;
+  margin: 10px 0; }
+
+.section-3 {
+  background: #2B331B;
+  text-align: center;
+  padding: 100px; }
+  .section-3 h2 {
+    color: #FFD300; }
+  .section-3 button {
+    background-color: #0F0F0F;
+    color: #ffffff; }

@@ -1,0 +1,13 @@
+.section-3{
+    background: $background-color;
+    text-align: center;
+    padding: 100px;
+    h2 {
+        color: $accent-color;
+    }
+    button {
+        background-color: $secondary-font-color;
+        color: $font-color;
+        
+    }
+}

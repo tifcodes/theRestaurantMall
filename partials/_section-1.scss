@@ -1,5 +1,5 @@
 .section-1 {
-    background: #2B331B;
+    background: $background-color;
 }
 
 .section-1 i {
@@ -7,7 +7,7 @@
     padding: 10px;
     border-radius: 50%;
     height: 10%;
-    color: #000000;
+    color: $secondary-font-color;
     // margin: 20px
 }
 

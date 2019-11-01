@@ -1,3 +1,10 @@
+/* colors */
+$background-color: #2B331B;
+$secondary-background-color: #171B0E;
+$accent-color: #FFD300;
+$font-color: #ffffff;
+$secondary-font-color: #0F0F0F;
+
 /* stripping style */
 body, 
 h1, 
@@ -24,11 +31,12 @@ li {
 
 html {
     font-size: 62.5%;
-    color: #ffffff;
+    color: $font-color;
 }
 
 body {
     font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
 }
 
 img {
@@ -50,21 +58,23 @@ h1 {
 
 h2 {
     font-size: 4.5rem;
-    line-height: 99.8px;
+    line-height: 9.98rem;
     font-weight: 400;
     text-transform: uppercase;
 }
 
 h3 {
     font-size: 4.0rem;
-    line-height: 5.8px;
+    line-height: 5.8rem;
     letter-spacing: 1.3px;
+    text-transform: uppercase;
 }
 
 h4 {
     font-size: 2.5rem;
-    line-height: 58px;
-    letter-spacing: 0.8px;
+    line-height: 5.8rem;
+    letter-spacing: 0.8p
+
 }
 
 button {
@@ -75,12 +85,13 @@ button {
 nav {
     font-size: 2rem;
     font-weight: 700;
-    line-height: 29px;
+    line-height: 2.9rem;
     letter-spacing: 1px;
 }
 
 p {
     font-size: 2rem;
+    line-height: 2.9rem;
 }
 
 i {

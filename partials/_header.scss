@@ -8,7 +8,7 @@ header {
 }
 
 a {
-    color: #ffffff;
+    color: $font-color;
 }
 
 ul {
@@ -27,8 +27,8 @@ h1 {
 }
 
 .restaurant {
-    background: #ffffff;
-    color:#0F0F0F;
+    background: $font-color;
+    color: $secondary-font-color;
     display: inline-flex;
     height: 6.9rem;
 }

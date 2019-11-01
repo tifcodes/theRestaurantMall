@@ -2,55 +2,39 @@
     background: $secondary-background-color;
 }
 
-.article-1,
+.article-1 {
+    display: flex;
+    flex-wrap: wrap;
+    &-image {
+        position: relative;
+        top: -50px;
+        left: -100px;
+        box-shadow: 15px 15px 0px 5px $accent-color;
+        margin-right: 60px;
+        width: calc(50% - 60px);
+    }
+    &-container {
+        margin: 50px 30px;
+        width: calc(50% - 60px);
+    }
+}
+
 .article-2 {
     display: flex;
     flex-wrap: wrap;
+    &-image {
+        position: relative;
+        bottom: -50px;
+        right: -100px;
+        box-shadow: -15px 15px 0px 5px $accent-color;
+        margin-left: 60px;
+        width: calc(50% - 60px);
+    }
+    &-container {
+        margin: 50px 30px;
+        width: calc(50% - 60px);
+    }
 }
-
-.article-1-image,
-.article-2-image {
-    position: relative;
-}
-
-.article-1-image {
-    top: -50px;
-    left: -100px;
-}
-
-.article-2-image {
-    bottom: -50px;
-    right: -100px;
-}
-
-.article-1 img{
-    box-shadow: 15px 15px 0px 5px $accent-color;
-}
-
-.article-2 img{
-    box-shadow: -15px 15px 0px 5px $accent-color;
-}
-
-.article-1-container,
-.article-2-container {
-    margin: 50px 30px;
-}
-
-.article-1-image {
-    margin-right: 60px;
-}
-
-.article-2-image {
-    margin-left: 60px;
-}
-
-.article-1-container,
-.article-2-container,
-.article-1-image,
-.article-2-image {
-    width: calc(50% - 60px);
-}
-
 
 .read-more {
     background-color: $accent-color;

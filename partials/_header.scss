@@ -1,18 +1,13 @@
 header {
-    background: url(../assets/home-header.jpg);
-    background-size: cover;
-    height: 95vh;
-    background-repeat: no-repeat;
-    background-position: center center;
-    position: relative;
+    @include header-constant(url(../assets/home-header.jpg), 95vh);
     ul {
         display: flex;
         li {
-            margin: 50px 25px;
-        border-bottom: 3px solid transparent;
-        a {
-            color: $font-color;
-        }
+            margin: 50px 15px;
+            border-bottom: 3px solid transparent;
+            a {
+                color: $font-color;
+            }
         }
     }
 }

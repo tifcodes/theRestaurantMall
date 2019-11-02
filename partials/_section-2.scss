@@ -5,11 +5,13 @@
 .article-1 {
     display: flex;
     flex-wrap: wrap;
+    img {
+        box-shadow: 15px 15px 0px 5px $accent-color;
+    }
     &-image {
         position: relative;
         top: -50px;
         left: -100px;
-        box-shadow: 15px 15px 0px 5px $accent-color;
         margin-right: 60px;
         width: calc(50% - 60px);
     }
@@ -22,11 +24,13 @@
 .article-2 {
     display: flex;
     flex-wrap: wrap;
+    img {
+        box-shadow: -15px 15px 0px 5px $accent-color;
+    }
     &-image {
         position: relative;
         bottom: -50px;
         right: -100px;
-        box-shadow: -15px 15px 0px 5px $accent-color;
         margin-left: 60px;
         width: calc(50% - 60px);
     }

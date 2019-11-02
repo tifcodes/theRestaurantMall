@@ -68,14 +68,16 @@ h3 {
     font-size: 4.0rem;
     line-height: 5.8rem;
     letter-spacing: 1.3px;
+    font-weight: 400;
     text-transform: uppercase;
 }
 
 h4 {
     font-size: 2.5rem;
     line-height: 5.8rem;
-    letter-spacing: 0.8p
-
+    letter-spacing: 0.8p;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 button {
@@ -91,10 +93,16 @@ nav {
 }
 
 p {
+    font-family: 'Barlow', sans-serif;
     font-size: 2rem;
-    line-height: 2.9rem;
+    line-height: 2.8rem;
+    letter-spacing: 1px;
 }
 
 i {
     font-size: 3rem;
+}
+
+a {
+    color: $font-color;
 }

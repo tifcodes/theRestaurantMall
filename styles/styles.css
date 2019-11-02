@@ -453,6 +453,8 @@ main {
       box-shadow: 8px 0px 0px 1px #171B0E;
       padding: 20px 0 20px 20px;
       background-color: #171B0E; }
+      .main-section .left-side div:last-of-type h4:first-of-type {
+        letter-spacing: 0; }
       .main-section .left-side div:last-of-type h4 {
         color: #FFD300; }
       .main-section .left-side div:last-of-type li {

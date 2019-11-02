@@ -1,3 +1,10 @@
+/* colors */
+$background-color: #2B331B;
+$secondary-background-color: #171B0E;
+$accent-color: #FFD300;
+$font-color: #ffffff;
+$secondary-font-color: #0F0F0F;
+
 @mixin header-constant($url, $height) {
     background: $url;
     background-size: cover;

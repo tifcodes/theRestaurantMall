@@ -4,10 +4,15 @@ form {
     }
 
     margin: 0 60px;
+    font-size: 1.6rem;
 
     input {
         margin: 40px 0;
         padding: 10px;
+        color: $font-color;
+        &:hover {
+            border: 3px solid $accent-color;
+        }
     }
 
     input[type=text],
@@ -17,10 +22,13 @@ form {
         border-bottom: 1px solid $accent-color;
         display: inline-block;
         width: 50%;
+        &:focus {
+            background-color: $secondary-background-color;
+        }
     }
     input[type=text] {
         margin-right: 20px;
-        width: calc(50% - 25px);
+        width: calc(50% - 30px);
     }
     textarea {
         background: transparent;
@@ -29,6 +37,10 @@ form {
         display: block;
         width: 100%;
         padding: 10px;
+        color: $font-color;
+        &:focus {
+            background-color: $secondary-background-color;
+        }
     }
     input[type=submit] {
         background: $accent-color;
@@ -37,5 +49,10 @@ form {
         text-transform: uppercase;
         display: block;
         width: 100%;
+        &:hover,
+        &:focus {
+            opacity: 0.5;
+        }
+
     }
 }

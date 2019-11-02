@@ -19,13 +19,13 @@ main {
             box-shadow: 28px 7px 0px -5px $secondary-background-color;
         }
         div:last-of-type {
-            h4:first-of-type {
-                letter-spacing: 0;
-            }
             box-shadow: 8px 0px 0px 1px $secondary-background-color;
             padding: 20px 0 20px 20px;
             background-color: $secondary-background-color;
             h4 {
+                &:first-of-type {
+                    letter-spacing: 0;
+                    }
                 color: $accent-color;
                 }
                 li {
@@ -33,6 +33,12 @@ main {
                     list-style-type: disc;
                     margin-left: 15px;
                     font-size: 2rem;
+                    a:hover {
+                        font-weight: 600;
+                    }
+                    a:focus {
+                        outline-color: $accent-color;
+                    }
                 }
         }
     }

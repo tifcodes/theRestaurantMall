@@ -47,5 +47,9 @@
     text-transform: uppercase;
     padding: 5px 10px 3px 10px;
     margin: 10px 0;
+    &:hover,
+    &:focus {
+        opacity: .5;
+    }
 }
 

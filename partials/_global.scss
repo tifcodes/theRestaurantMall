@@ -1,10 +1,3 @@
-/* colors */
-$background-color: #2B331B;
-$secondary-background-color: #171B0E;
-$accent-color: #FFD300;
-$font-color: #ffffff;
-$secondary-font-color: #0F0F0F;
-
 /* stripping style */
 body, 
 h1, 
@@ -52,7 +45,7 @@ img {
 }
 
 h1 {
-    @include fontSize(6.9rem, 0, 600, uppercase);
+    @include fontSize(6.9rem, normal, 600, uppercase);
 }
 
 h2 {

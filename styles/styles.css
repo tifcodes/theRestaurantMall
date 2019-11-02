@@ -186,7 +186,7 @@ img {
 
 h1 {
   font-size: 6.9rem;
-  line-height: 0;
+  line-height: normal;
   font-weight: 600;
   text-transform: uppercase; }
 
@@ -247,8 +247,12 @@ header {
     header ul li {
       margin: 50px 15px;
       border-bottom: 3px solid transparent; }
+      header ul li:hover {
+        border-bottom: 3px solid #FFD300; }
       header ul li a {
         color: #ffffff; }
+        header ul li a:focus {
+          outline-color: #FFD300; }
 
 h1 {
   display: -webkit-inline-box;
@@ -370,6 +374,8 @@ h1 {
   text-transform: uppercase;
   padding: 5px 10px 3px 10px;
   margin: 10px 0; }
+  .read-more:hover, .read-more:focus {
+    opacity: .5; }
 
 .section-3 {
   background: #2B331B;
@@ -453,15 +459,19 @@ main {
       box-shadow: 8px 0px 0px 1px #171B0E;
       padding: 20px 0 20px 20px;
       background-color: #171B0E; }
-      .main-section .left-side div:last-of-type h4:first-of-type {
-        letter-spacing: 0; }
       .main-section .left-side div:last-of-type h4 {
         color: #FFD300; }
+        .main-section .left-side div:last-of-type h4:first-of-type {
+          letter-spacing: 0; }
       .main-section .left-side div:last-of-type li {
         font-family: 'Barlow', sans-serif;
         list-style-type: disc;
         margin-left: 15px;
         font-size: 2rem; }
+        .main-section .left-side div:last-of-type li a:hover {
+          font-weight: 600; }
+        .main-section .left-side div:last-of-type li a:focus {
+          outline-color: #FFD300; }
   .main-section .right-side {
     width: 70%;
     position: relative;
@@ -545,7 +555,8 @@ main {
     left: 50px; }
 
 form {
-  margin: 0 60px; }
+  margin: 0 60px;
+  font-size: 1.6rem; }
   form ::-webkit-input-placeholder {
     color: #ffffff; }
   form :-ms-input-placeholder {
@@ -556,7 +567,10 @@ form {
     color: #ffffff; }
   form input {
     margin: 40px 0;
-    padding: 10px; }
+    padding: 10px;
+    color: #ffffff; }
+    form input:hover {
+      border: 3px solid #FFD300; }
   form input[type=text],
   form input[type=email] {
     background: transparent;
@@ -564,16 +578,22 @@ form {
     border-bottom: 1px solid #FFD300;
     display: inline-block;
     width: 50%; }
+    form input[type=text]:focus,
+    form input[type=email]:focus {
+      background-color: #171B0E; }
   form input[type=text] {
     margin-right: 20px;
-    width: calc(50% - 25px); }
+    width: calc(50% - 30px); }
   form textarea {
     background: transparent;
     border: 1px solid #FFD300;
     resize: none;
     display: block;
     width: 100%;
-    padding: 10px; }
+    padding: 10px;
+    color: #ffffff; }
+    form textarea:focus {
+      background-color: #171B0E; }
   form input[type=submit] {
     background: #FFD300;
     color: #0F0F0F;
@@ -581,6 +601,8 @@ form {
     text-transform: uppercase;
     display: block;
     width: 100%; }
+    form input[type=submit]:hover, form input[type=submit]:focus {
+      opacity: 0.5; }
 
 footer {
   background: #0F0F0F;

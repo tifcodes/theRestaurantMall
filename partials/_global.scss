@@ -13,7 +13,7 @@ h3,
 h4, 
 h5, 
 ul, 
-p {
+p{
     margin: 0;
     padding: 0;
 }
@@ -52,32 +52,21 @@ img {
 }
 
 h1 {
-    font-size: 6.9rem;
-    font-weight: 600;
-    text-transform: uppercase;
+    @include fontSize(6.9rem, 0, 600, uppercase);
 }
 
 h2 {
-    font-size: 4.5rem;
-    line-height: 9.98rem;
-    font-weight: 400;
-    text-transform: uppercase;
+    @include fontSize(4.5rem, 9.98rem, 400, uppercase);
 }
 
 h3 {
-    font-size: 4.0rem;
-    line-height: 5.8rem;
+    @include fontSize(4.0rem, 5.8rem, 400, uppercase);
     letter-spacing: 1.3px;
-    font-weight: 400;
-    text-transform: uppercase;
 }
 
 h4 {
-    font-size: 2.5rem;
-    line-height: 5.8rem;
-    letter-spacing: 0.8p;
-    font-weight: 400;
-    text-transform: uppercase;
+    @include fontSize(2.5rem, 5.8rem, 400, uppercase);
+    letter-spacing: 0.8px;
 }
 
 button {
@@ -86,9 +75,7 @@ button {
 }
 
 nav {
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 2.9rem;
+    @include fontSize(2rem, 2.9rem, 400, none);
     letter-spacing: 1px;
 }
 

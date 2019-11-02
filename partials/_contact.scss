@@ -1,0 +1,37 @@
+.contact-header {
+    @include header-constant (url(../assets/contact-header.jpg),75vh);
+} 
+
+.contact-section{
+    display: flex;
+    flex-wrap: wrap;
+    .social-section {
+        width: 35%;
+        margin: 50px 0;
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            li {
+                margin-right: 30px;
+                i {
+                    font-size: 2.5rem;
+                }  
+            }
+        }
+        .contact-text {
+            font-style: normal;
+            p:first-of-type {
+                padding: 20px 0;
+            }
+        }
+    }
+
+    section:last-of-type {
+        background: $secondary-background-color;
+        box-shadow: 18px 18px 0px -4px $accent-color;
+        width: 65%;
+        position: relative;
+        bottom: 100px;
+        left: 50px;
+    }
+}

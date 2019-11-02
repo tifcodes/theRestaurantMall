@@ -186,6 +186,7 @@ img {
 
 h1 {
   font-size: 6.9rem;
+  line-height: 0;
   font-weight: 600;
   text-transform: uppercase; }
 
@@ -196,18 +197,18 @@ h2 {
   text-transform: uppercase; }
 
 h3 {
-  font-size: 4.0rem;
+  font-size: 4rem;
   line-height: 5.8rem;
-  letter-spacing: 1.3px;
   font-weight: 400;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: 1.3px; }
 
 h4 {
   font-size: 2.5rem;
   line-height: 5.8rem;
-  letter-spacing: 0.8p;
   font-weight: 400;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: 0.8px; }
 
 button {
   font-size: 2.24rem;
@@ -215,8 +216,9 @@ button {
 
 nav {
   font-size: 2rem;
-  font-weight: 700;
   line-height: 2.9rem;
+  font-weight: 400;
+  text-transform: none;
   letter-spacing: 1px; }
 
 p {
@@ -439,25 +441,39 @@ main {
   padding-top: 50px; }
   .main-section .left-side {
     width: 30%; }
+    .main-section .left-side .aside-image {
+      position: relative;
+      left: -100px;
+      width: 125%; }
     .main-section .left-side img {
-      -webkit-box-shadow: 10px 3px 0px -3px #171B0E;
-      box-shadow: 10px 3px 0px -3px #171B0E; }
-    .main-section .left-side div {
+      -webkit-box-shadow: 28px 7px 0px -5px #171B0E;
+      box-shadow: 28px 7px 0px -5px #171B0E; }
+    .main-section .left-side div:last-of-type {
+      -webkit-box-shadow: 8px 0px 0px 1px #171B0E;
+      box-shadow: 8px 0px 0px 1px #171B0E;
+      padding: 20px 0 20px 20px;
       background-color: #171B0E; }
+      .main-section .left-side div:last-of-type h4 {
+        color: #FFD300; }
+      .main-section .left-side div:last-of-type li {
+        font-family: 'Barlow', sans-serif;
+        list-style-type: disc;
+        margin-left: 15px;
+        font-size: 2rem; }
   .main-section .right-side {
     width: 70%;
     position: relative;
     top: -200px;
-    right: -90px; }
+    right: -100px; }
     .main-section .right-side .blog-article img {
-      -webkit-box-shadow: -15px 15px 0px 0px #FFD300;
-      box-shadow: -15px 15px 0px 0px #FFD300;
+      -webkit-box-shadow: -20px 20px 0px -4px #FFD300;
+      box-shadow: -20px 20px 0px -4px #FFD300;
       position: relative;
-      right: -15px; }
+      right: 0px; }
     .main-section .right-side .blog-article-container {
-      padding: 40px 20px 40px 60px;
-      border-left: 5px solid #FFD300;
-      border-bottom: 5px solid #FFD300; }
+      -webkit-box-shadow: 0px 8px 0px 8px #2B331B, -5px 11px 0 11px #FFD300;
+      box-shadow: 0px 8px 0px 8px #2B331B, -5px 11px 0 11px #FFD300;
+      padding: 40px 20px 40px 60px; }
       .main-section .right-side .blog-article-container h2 {
         color: #FFD300; }
         .main-section .right-side .blog-article-container h2 + p {
@@ -494,11 +510,75 @@ main {
   background-position: center center;
   position: relative; }
 
-form input[type=text],
-form input[type=email] {
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid #FFD300; }
+.contact-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .contact-section .social-section {
+    width: 35%;
+    margin: 50px 0; }
+    .contact-section .social-section ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      .contact-section .social-section ul li {
+        margin-right: 30px; }
+        .contact-section .social-section ul li i {
+          font-size: 2.5rem; }
+    .contact-section .social-section .contact-text {
+      font-style: normal; }
+      .contact-section .social-section .contact-text p:first-of-type {
+        padding: 20px 0; }
+  .contact-section section:last-of-type {
+    background: #171B0E;
+    -webkit-box-shadow: 18px 18px 0px -4px #FFD300;
+    box-shadow: 18px 18px 0px -4px #FFD300;
+    width: 65%;
+    position: relative;
+    bottom: 100px;
+    left: 50px; }
+
+form {
+  margin: 0 60px; }
+  form ::-webkit-input-placeholder {
+    color: #ffffff; }
+  form :-ms-input-placeholder {
+    color: #ffffff; }
+  form ::-ms-input-placeholder {
+    color: #ffffff; }
+  form ::placeholder {
+    color: #ffffff; }
+  form input {
+    margin: 40px 0;
+    padding: 10px; }
+  form input[type=text],
+  form input[type=email] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #FFD300;
+    display: inline-block;
+    width: 50%; }
+  form input[type=text] {
+    margin-right: 20px;
+    width: calc(50% - 25px); }
+  form textarea {
+    background: transparent;
+    border: 1px solid #FFD300;
+    resize: none;
+    display: block;
+    width: 100%;
+    padding: 10px; }
+  form input[type=submit] {
+    background: #FFD300;
+    color: #0F0F0F;
+    border: none;
+    text-transform: uppercase;
+    display: block;
+    width: 100%; }
 
 footer {
   background: #0F0F0F;

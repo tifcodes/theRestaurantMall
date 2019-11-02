@@ -1,8 +1,41 @@
 form {
+    ::placeholder {
+        color: $font-color;
+    }
+
+    margin: 0 60px;
+
+    input {
+        margin: 40px 0;
+        padding: 10px;
+    }
+
     input[type=text],
     input[type=email] {
         background: transparent;
         border: none;
         border-bottom: 1px solid $accent-color;
+        display: inline-block;
+        width: 50%;
+    }
+    input[type=text] {
+        margin-right: 20px;
+        width: calc(50% - 25px);
+    }
+    textarea {
+        background: transparent;
+        border: 1px solid $accent-color;
+        resize: none;
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+    input[type=submit] {
+        background: $accent-color;
+        color: $secondary-font-color;
+        border: none;
+        text-transform: uppercase;
+        display: block;
+        width: 100%;
     }
 }

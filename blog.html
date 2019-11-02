@@ -26,8 +26,11 @@
     </header>
     <main>
         <div class="wrapper main-section">
-            <aside class="left-side blog-aside">
-                <img src="./assets/blog-side-image.jpg" alt="plate of salmon with lots of vegetables served with it">
+            <aside class="left-side">
+                <div class = "aside-image">
+                    <img src="./assets/blog-side-image.jpg"
+                        alt="plate of salmon with lots of vegetables served with it">
+                </div>
                 <div>
                     <h4> featured restaurants </h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est architecto ut deleniti alias
@@ -44,10 +47,12 @@
                 </div>
             </aside>
             <div class="right-side">
-                <section>
+                <section class="blog-section">
                     <article class="blog-article">
-                        <img src="./assets/blog-post-image.jpg"
-                            alt="wait staff arranging the table before the restaurant opens">
+                        <div class="blog-article-image">
+                            <img src="./assets/blog-post-image.jpg"
+                                alt="wait staff arranging the table before the restaurant opens">
+                        </div>
                         <div class="blog-article-container">
                             <h2> employment opportunities </h2>
                             <p> <time datetime="2019-10-30"> Monday, October 30, 2019 </time> by Sulaire</p>
@@ -86,8 +91,9 @@
                         <h3> comments:</h3>
                         <div class="comment-section">
                             <div>
-                            <img src="./assets/comment-1.jpg"
-                                alt="girl with shoulder length hair in a white shirt with a blurry background"> </div>
+                                <img src="./assets/comment-1.jpg"
+                                    alt="girl with shoulder length hair in a white shirt with a blurry background">
+                            </div>
                             <div class="comment-section-container">
                                 <p> <time datetime="2019-10-09"> Tuesday, October 9th, 2019</time> by Ali</p>
                                 <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, deleniti quia
@@ -100,8 +106,8 @@
                         </div>
                         <div class="comment-section">
                             <div>
-                            <img src="./assets/comment-2.jpg"
-                                alt="black girl with curly hair facing the left side in a pink background"></div>
+                                <img src="./assets/comment-2.jpg"
+                                    alt="black girl with curly hair facing the left side in a pink background"></div>
                             <div class="comment-section-container">
                                 <p> <time datetime="2019-10-10"> Wednesday, October 10th, 2019</time> by Lisa</p>
                                 <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, deleniti quia
@@ -115,15 +121,15 @@
                             </div>
                         </div>
                 </section>
-                <section class = "wrapper">
+                <section>
                     <form action="submit">
-                        <label for="name" class = "visuallyHidden"> Name </label>
+                        <label for="name" class="visuallyHidden"> Name </label>
                         <input type="text" name="name" placeholder="Name">
 
-                        <label for="emailAddress" class = "visuallyHidden"> Email Address </label>
+                        <label for="emailAddress" class="visuallyHidden"> Email Address </label>
                         <input type="email" name="email" placeholder="Email Address">
 
-                        <label for="comment" class = "visuallyHidden"> Comment </label>
+                        <label for="comment" class="visuallyHidden"> Comment </label>
                         <textarea name="comment" placeholder="Comment" cols=30 rows=10></textarea>
 
                         <input type="submit" value="post comment">

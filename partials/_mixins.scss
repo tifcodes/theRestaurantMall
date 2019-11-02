@@ -6,3 +6,10 @@
     background-position: center center;
     position: relative;   
 }
+
+@mixin fontSize ($font-size, $line-height, $font-weight, $text-transform) {
+    font-size: $font-size;
+    line-height: $line-height;
+    font-weight: $font-weight;
+    text-transform: $text-transform;
+}

@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header class = "contact-header">
+    <header class="contact-header">
         <div class="wrapper">
             <nav>
                 <ul>
@@ -26,54 +26,56 @@
         </div>
     </header>
     <main>
-        <section>
-            <ul class="social">
-                <li>
-                    <a href="https://www.facebook.com/therestaurantmall/" target="_blank">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://instagram.com/therestaurantmall/" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/therestaurantmall" target="_blank">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://whatsapp.com/therestaurantmall/" target="_blank">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                </li>
-            </ul>
-            <div class="contact">
-                <address class="contact-text">
-                    <a href="mailto:info@email.com">
-                        info@email.com </a>
-                    <a href="123-456-7890"> | 123-456-7890</a>
-                    <p> 123 Queen Street West, Unit 10 </p>
-                    <p> Toronto, Ontario </p>
-                    <p> M5V2D5 </p>
-                </address>
-            </div>
-        </section>
-        <section>
-            <form action="submit">
-                <label for="name"> Name </label>
-                <input type="text" name="name" placeholder="Name">
+        <div class="wrapper contact-section">
+            <section class = "social-section">
+                <ul class="social">
+                    <li>
+                        <a href="https://www.facebook.com/therestaurantmall/" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/therestaurantmall/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/therestaurantmall" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://whatsapp.com/therestaurantmall/" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="contact">
+                    <address class="contact-text">
+                        <p><a href="mailto:info@email.com">
+                            info@email.com </a></p>
+                        <p><a href="123-456-7890"> 123-456-7890</a></p>
+                        <p> 123 Queen Street West, Unit 10 </p>
+                        <p> Toronto, Ontario </p>
+                        <p> M5V2D5 </p>
+                    </address>
+                </div>
+            </section>
+            <section>
+                <form action="submit">
+                    <label for="name" class="visuallyHidden"> Name </label>
+                    <input type="text" name="name" placeholder="Name">
 
-                <label for="emailAddress"> Email Address </label>
-                <input type="email" name="email" placeholder="Email Address">
+                    <label for="emailAddress" class="visuallyHidden"> Email Address </label>
+                    <input type="email" name="email" placeholder="Email Address">
 
-                <label for="message"> Message </label>
-                <textarea name="message" placeholder="Message" cols=30 rows=10></textarea>
+                    <label for="message" class="visuallyHidden"> Message </label>
+                    <textarea name="message" placeholder="Message" cols=30 rows=15></textarea>
 
-                <input type="submit" value="Submit">
-            </form>
-        </section>
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="wrapper">

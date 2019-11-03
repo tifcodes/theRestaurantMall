@@ -441,6 +441,8 @@ main {
   padding-top: 50px; }
   .main-section .left-side {
     width: 30%; }
+    .main-section .left-side .aside-click {
+      opacity: 0; }
     .main-section .left-side .aside-image {
       position: relative;
       left: -100px;

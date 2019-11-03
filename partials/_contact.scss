@@ -15,6 +15,12 @@
                 margin-right: 30px;
                 i {
                     font-size: 2.5rem;
+                    &:hover {
+                        color: $accent-color;
+                    }
+                    &:focus {
+                        outline-color: $accent-color;
+                    }
                 }  
             }
         }
@@ -23,8 +29,12 @@
             p:first-of-type {
                 padding: 20px 0;
             }
+            p a:hover {
+                color: $accent-color;
+                }
         }
     }
+
 
     section:last-of-type {
         background: $secondary-background-color;
@@ -33,5 +43,15 @@
         position: relative;
         bottom: 100px;
         left: 50px;
+    }
+
+    form {
+        input[type=text],
+        input[type=email],
+        textarea {
+            &:focus {
+            background-color: $background-color;
+        }
+        }
     }
 }

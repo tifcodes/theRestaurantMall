@@ -1,0 +1,128 @@
+@media (max-width: 1075px) {
+    .wrapper {
+        width: 95%;
+    }
+
+    .header-img {
+        display:none;
+    }
+
+    .section-1-part-1,
+    .section-1-part-2 {
+        li {
+            display: inline;
+            i {
+                height: 15%;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    img {
+        margin: 0 auto;
+    }
+
+    header nav {
+        opacity: 0;
+    }
+
+    header i.fa-bars {
+        visibility: visible;
+    }
+
+    .read-more {
+        display: block;
+        margin: 20px auto;
+    }
+
+    .section-1-part-1,
+    .section-1-part-2 {
+        li {
+            width: 100%;
+            text-align: center;
+            div {
+                width: 100%;
+            }
+        }
+    }
+
+    .article-1 {
+        img {
+            box-shadow: none;
+        }
+        &-image {
+            width: 100%;
+            position: static;
+            margin-right: 0;
+        }
+        &-container {
+            width: 100%;
+            
+        }
+    }
+
+    .article-2 {
+        flex-direction: column-reverse;
+        img {
+            box-shadow: none;
+        }
+        h3 {
+            margin-top: 50px;
+        }
+        &-image {
+            width: 100%;
+            margin-left: 0;
+            right: 0;
+        }
+        &-container {
+            width: 90%;
+        }
+    }
+
+    .section-3 {
+        padding: 50px
+    } 
+
+    .section-5 {
+        img {
+            box-shadow: none;
+        }
+        &-image {
+            width: 100%;
+        }
+        &-container {
+            width: 100%;
+            margin: 50px 30px;
+        }
+    }
+
+    .section-6 ul li {
+        width: 100%;
+        &:nth-of-type(2) {
+            margin: 0;
+        }
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 6rem;
+    }
+    .restaurant {
+        height: 6rem;
+    }
+
+    .section-1-part-1,
+    .section-1-part-2 {
+            li i {
+                width: 10%;
+            }
+        }
+}

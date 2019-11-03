@@ -23,6 +23,14 @@ h1 {
     flex-direction: column;
 }
 
+header i.fa-bars {
+    position: absolute;
+    top: 50px;
+    right: 25px;
+    font-size: 2rem;
+    visibility: hidden;
+}
+
 .restaurant {
     background: $font-color;
     color: $secondary-font-color;

@@ -441,8 +441,6 @@ main {
   padding-top: 50px; }
   .main-section .left-side {
     width: 30%; }
-    .main-section .left-side .aside-click {
-      opacity: 0; }
     .main-section .left-side .aside-image {
       position: relative;
       left: -100px;
@@ -472,7 +470,7 @@ main {
     width: 70%;
     position: relative;
     top: -200px;
-    right: -100px; }
+    right: -90px; }
     .main-section .right-side .blog-article img {
       -webkit-box-shadow: -20px 20px 0px -4px #FFD300;
       box-shadow: -20px 20px 0px -4px #FFD300;
@@ -617,6 +615,10 @@ footer {
   footer h5 {
     font-size: 2rem; }
 
+@media (max-width: 1205px) {
+  .main-section .right-side {
+    right: -75px; } }
+
 @media (max-width: 1075px) {
   .wrapper {
     width: 95%; }
@@ -634,6 +636,13 @@ img {
     box-shadow: none; }
   -image {
     position: static; }
+  .main-section .left-side {
+    display: none; }
+    .main-section .left-side:hover {
+      display: block; }
+  .main-section .right-side {
+    position: static;
+    width: 100%; }
   .contact-section section:last-of-type {
     position: static;
     margin-bottom: 30px; } }
@@ -724,6 +733,8 @@ img {
   .section-1-part-1 li i,
   .section-1-part-2 li i {
     width: 10%; }
+  .main-section .right-side .blog-article-container {
+    padding: 20px; }
   form {
     margin: 0 20px; }
     form input[type=text],
@@ -737,7 +748,7 @@ img {
   .restaurant {
     height: 4rem; }
   h2 {
-    font-size: 3.7rem; }
+    font-size: 3.4rem; }
   h3 {
     font-size: 3rem; }
   nav {

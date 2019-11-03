@@ -1,3 +1,10 @@
+@media (max-width: 1205px) {
+    .main-section {
+        .right-side{
+            right: -75px;
+        }
+    }
+}
 @media (max-width: 1075px) {
     .wrapper {
         width: 95%;
@@ -24,6 +31,21 @@
         &-image {
             position: static;
         }
+    
+    .main-section {
+        .left-side {
+            display: none;
+            &:hover {
+                display: block;
+            }
+        }
+
+        .right-side {
+            position: static;
+            width: 100%;
+        }
+
+    }
 
     .contact-section {
         section:last-of-type {
@@ -133,6 +155,7 @@
         margin: 20px 0;
     }
 
+
     .contact-section {
     .social-section {
             width: 100%;
@@ -166,6 +189,10 @@
             }
     }
 
+    .main-section .right-side .blog-article-container{
+        padding: 20px;
+    }
+
     form {
         margin: 0 20px;
         input[type=text],
@@ -185,7 +212,7 @@
     }
 
     h2 {
-        font-size: 3.7rem;
+        font-size: 3.4rem;
     }
 
     h3 {

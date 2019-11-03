@@ -5,26 +5,41 @@ main {
     background: $background-color;
 }
 
-.main-section {
+.images {
     display: flex;
-    padding-top: 50px;
+    div:first-of-type {
+        img {
+            box-shadow: 45px 20px 0px -15px $secondary-background-color;
+        }
+        width: calc(30% - 50px);
+        padding-top: 50px;
+        margin-right: 50px;
+    }
+    div:last-of-type {
+        img {
+            box-shadow: -20px 20px 0px -4px $accent-color;
+        }
+        width: calc(70% - 120px);
+        margin-left: 120px;
+        position: relative;
+        top: -100px;
+    }
+}
+
+.containers {
+    display: flex;
     .left-side {
-        width: 30%;
+        width: calc(30% - 50px);
+        margin-right: 50px;
         .aside-click {
             opacity: 0;
         }
-        .aside-image {
-            position: relative;
-            left: -100px;
-            width: 125%;
-        }
-        img {
-            box-shadow: 41px 11px 0px -19px $secondary-background-color;
-        }
         div:last-of-type {
-            box-shadow: 0px -1px 0px 8px $secondary-background-color, 10px 5px 0 -6px $secondary-background-color;
+            // box-shadow: 0px -1px 0px 8px $secondary-background-color;
             padding: 20px 0 20px 20px;
             background-color: $secondary-background-color;
+            position: relative;
+            top: -80px;
             h4 {
                 &:first-of-type {
                     letter-spacing: 0;
@@ -48,18 +63,11 @@ main {
     .right-side {
         width: 70%;
         position: relative;
-        top: -200px;
+        top: -85px;
         right: -100px;
-        .blog-article {
-            img {
-                box-shadow: -20px 20px 0px -4px $accent-color;
-                position: relative;
-                right: 0px;
-            }
-        }
         .blog-article-container {
-            box-shadow: 0px 8px 0px 8px $background-color, -5px 11px 0 11px $accent-color;
-            padding: 40px 20px 40px 60px;
+            box-shadow: -11px 11px 0px 11px $background-color, -17px 14px 0 13px $accent-color;
+            padding: 40px 0px 40px 60px;
             h2 {
             color: $accent-color; 
                 + p {
@@ -96,4 +104,3 @@ main {
         }
     }
 }
-

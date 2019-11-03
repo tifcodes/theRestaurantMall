@@ -1,5 +1,6 @@
 .section-2 {
     background: $secondary-background-color;
+    position: relative;
 }
 
 .article-1 {
@@ -28,9 +29,9 @@
         box-shadow: -15px 15px 0px 5px $accent-color;
     }
     &-image {
-        position: relative;
+        position: absolute;
         bottom: -50px;
-        right: -100px;
+        right: 0px;
         margin-left: 60px;
         width: calc(50% - 60px);
     }

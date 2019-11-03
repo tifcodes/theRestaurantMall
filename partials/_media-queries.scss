@@ -17,6 +17,20 @@
         }
     }
 
+    .section-2 
+        img{
+            box-shadow: none;
+        }
+        &-image {
+            position: static;
+        }
+
+    .contact-section {
+        section:last-of-type {
+            position: static;
+            margin-bottom: 30px;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -26,6 +40,14 @@
 
     img {
         margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 6.5rem;
+    }
+
+    .restaurant {
+        height: 6.5rem;
     }
 
     header nav {
@@ -78,7 +100,7 @@
         &-image {
             width: 100%;
             margin-left: 0;
-            right: 0;
+            position: static;
         }
         &-container {
             width: 90%;
@@ -95,6 +117,7 @@
         }
         &-image {
             width: 100%;
+            margin-left: 0;
         }
         &-container {
             width: 100%;
@@ -109,14 +132,31 @@
         }
         margin: 20px 0;
     }
+
+    .contact-section {
+    .social-section {
+            width: 100%;
+            text-align: center;
+            ul {
+                justify-content: center;
+                li {
+                    margin: 0 20px;
+                }
+            }
+        }
+    section:last-of-type {
+            box-shadow: none;
+            width: 100%;
+        }
+    }
 }
 
 @media (max-width: 500px) {
     h1 {
-        font-size: 6rem;
+        font-size: 5.5rem;
     }
     .restaurant {
-        height: 6rem;
+        height: 5.5rem;
     }
 
     .section-1-part-1,
@@ -124,5 +164,37 @@
             li i {
                 width: 10%;
             }
+    }
+
+    form {
+        margin: 0 20px;
+        input[type=text],
+        input[type=email] {
+            width: 100%;
+            margin: 20px 0;
         }
+    }
+}
+
+@media (max-width: 425px) {
+    h1 {
+        font-size: 4rem;
+    }
+    .restaurant {
+        height: 4rem;
+    }
+
+    h2 {
+        font-size: 3.7rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+
+    nav {
+        letter-spacing: 0;
+        font-size: 1.6rem;
+    }
 }

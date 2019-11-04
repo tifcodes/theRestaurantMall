@@ -438,9 +438,15 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 50px; }
+  padding-top: 50px;
+  position: relative; }
   .main-section .left-side {
-    width: 30%; }
+    width: 30%;
+    position: relative;
+    left: 0px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
     .main-section .left-side .aside-image {
       position: relative;
       left: -100px;
@@ -448,23 +454,23 @@ main {
     .main-section .left-side img {
       -webkit-box-shadow: 41px 11px 0px -19px #171B0E;
       box-shadow: 41px 11px 0px -19px #171B0E; }
-    .main-section .left-side div:last-of-type {
+    .main-section .left-side .aside-container {
       -webkit-box-shadow: 0px -1px 0px 8px #171B0E, 10px 5px 0 -6px #171B0E;
       box-shadow: 0px -1px 0px 8px #171B0E, 10px 5px 0 -6px #171B0E;
       padding: 20px 0 20px 20px;
       background-color: #171B0E; }
-      .main-section .left-side div:last-of-type h4 {
+      .main-section .left-side .aside-container h4 {
         color: #FFD300; }
-        .main-section .left-side div:last-of-type h4:first-of-type {
+        .main-section .left-side .aside-container h4:first-of-type {
           letter-spacing: 0; }
-      .main-section .left-side div:last-of-type li {
+      .main-section .left-side .aside-container li {
         font-family: 'Barlow', sans-serif;
         list-style-type: disc;
         margin-left: 15px;
         font-size: 2rem; }
-        .main-section .left-side div:last-of-type li a:hover {
+        .main-section .left-side .aside-container li a:hover {
           font-weight: 600; }
-        .main-section .left-side div:last-of-type li a:focus {
+        .main-section .left-side .aside-container li a:focus {
           outline-color: #FFD300; }
   .main-section .right-side {
     width: 70%;
@@ -637,9 +643,22 @@ img {
   -image {
     position: static; }
   .main-section .left-side {
-    display: none; }
-    .main-section .left-side:hover {
-      display: block; }
+    left: -700px;
+    position: absolute;
+    width: 50%; }
+    .main-section .left-side img {
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+    .main-section .left-side .aside-image {
+      left: 0;
+      width: 100%; }
+    .main-section .left-side .aside-container {
+      padding: 20px;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+  .main-section input[type="checkbox"]:checked + .left-side {
+    left: 0;
+    z-index: 10; }
   .main-section .right-side {
     position: static;
     width: 100%; }

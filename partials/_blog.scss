@@ -8,8 +8,12 @@ main {
 .main-section {
     display: flex;
     padding-top: 50px;
+    position: relative;
     .left-side {
         width: 30%;
+        position: relative;
+        left: 0px;
+        transition: all 0.3s ease;
         .aside-image {
             position: relative;
             left: -100px;
@@ -18,7 +22,7 @@ main {
         img {
             box-shadow: 41px 11px 0px -19px $secondary-background-color;
         }
-        div:last-of-type {
+        .aside-container {
             box-shadow: 0px -1px 0px 8px $secondary-background-color, 10px 5px 0 -6px $secondary-background-color;
             padding: 20px 0 20px 20px;
             background-color: $secondary-background-color;
@@ -94,4 +98,9 @@ main {
     }
 }
 
+
+
+// input[type="checkbox"] {
+// 	display: none;  /*hide the input, we don't need to see it */
+// }
 

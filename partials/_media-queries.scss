@@ -34,18 +34,36 @@
     
     .main-section {
         .left-side {
-            display: none;
-            &:hover {
-                display: block;
+            left: -700px;
+            position: absolute;
+            width: 50%;
+            img {
+                box-shadow: none;
             }
+            .aside-image {
+                left: 0;
+                width: 100%;
+            }
+            .aside-container {
+                padding: 20px;
+                box-shadow: none;
+            }
+        }
+        //     &:hover {
+        //         display: block;
+        //     }
+        // }
+
+        input[type="checkbox"]:checked + .left-side {
+            left: 0;
+            z-index: 10;
         }
 
         .right-side {
             position: static;
             width: 100%;
         }
-
-    }
+}
 
     .contact-section {
         section:last-of-type {

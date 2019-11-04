@@ -9,11 +9,15 @@ main {
     display: flex;
     padding-top: 50px;
     position: relative;
+    input[type="checkbox"] {
+        opacity: 0;
+    }
     .left-side {
         width: 30%;
         position: relative;
         left: 0px;
         transition: all 0.3s ease;
+
         .aside-image {
             position: relative;
             left: -100px;
@@ -100,7 +104,5 @@ main {
 
 
 
-// input[type="checkbox"] {
-// 	display: none;  /*hide the input, we don't need to see it */
-// }
+
 

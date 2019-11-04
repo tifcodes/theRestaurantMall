@@ -26,10 +26,12 @@
 
     .section-2 
         .article-1-image {
-            position: static;
+            left: -25px;
+            top: 0;
         }
         .article-2-image {
-            position: static;
+            bottom: 0;
+            
         }
     
     .main-section {
@@ -109,9 +111,6 @@
     }
 
     .article-1 {
-        img {
-            box-shadow: none;
-        }
         &-image {
             width: 100%;
             position: static;
@@ -119,22 +118,18 @@
         }
         &-container {
             width: 100%;
-            
         }
     }
 
     .article-2 {
         flex-direction: column-reverse;
-        img {
-            box-shadow: none;
-        }
         h3 {
             margin-top: 50px;
         }
         &-image {
             width: 100%;
-            margin-left: 0;
             position: static;
+            margin-left: 0;
         }
         &-container {
             width: 90%;
@@ -146,9 +141,6 @@
     } 
 
     .section-5 {
-        img {
-            box-shadow: none;
-        }
         &-image {
             width: 100%;
             margin-left: 0;
@@ -206,7 +198,6 @@
             }
         }
     section:last-of-type {
-            box-shadow: none;
             width: 100%;
         }
     }

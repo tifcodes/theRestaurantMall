@@ -238,7 +238,8 @@ header {
   background-size: cover;
   height: 95vh;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: center center;
+  position: relative; }
   header ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -427,11 +428,11 @@ header i.fa-bars {
   background-size: cover;
   height: 75vh;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: center center;
+  position: relative; }
 
 main {
-  background: #2B331B;
-  position: relative; }
+  background: #2B331B; }
 
 .main-section {
   display: -webkit-box;
@@ -520,7 +521,8 @@ main {
   background-size: cover;
   height: 75vh;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: center center;
+  position: relative; }
 
 .contact-section {
   display: -webkit-box;
@@ -638,9 +640,10 @@ footer {
       height: 15%; }
   .section-2
 .article-1-image {
-    position: static; }
+    left: -25px;
+    top: 0; }
   .article-2-image {
-    position: static; }
+    bottom: 0; }
   .main-section .left-side {
     left: -700px;
     position: absolute;
@@ -687,9 +690,6 @@ footer {
     .section-1-part-1 li div,
     .section-1-part-2 li div {
       width: 100%; }
-  .article-1 img {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
   .article-1-image {
     width: 100%;
     position: static;
@@ -701,22 +701,16 @@ footer {
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse; }
-    .article-2 img {
-      -webkit-box-shadow: none;
-      box-shadow: none; }
     .article-2 h3 {
       margin-top: 50px; }
     .article-2-image {
       width: 100%;
-      margin-left: 0;
-      position: static; }
+      position: static;
+      margin-left: 0; }
     .article-2-container {
       width: 90%; }
   .section-3 {
     padding: 50px; }
-  .section-5 img {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
   .section-5-image {
     width: 100%;
     margin-left: 0; }
@@ -758,8 +752,6 @@ footer {
       .contact-section .social-section ul li {
         margin: 0 20px; }
   .contact-section section:last-of-type {
-    -webkit-box-shadow: none;
-    box-shadow: none;
     width: 100%; } }
 
 @media (max-width: 500px) {

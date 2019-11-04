@@ -238,8 +238,7 @@ header {
   background-size: cover;
   height: 95vh;
   background-repeat: no-repeat;
-  background-position: center center;
-  position: relative; }
+  background-position: center center; }
   header ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -428,39 +427,39 @@ header i.fa-bars {
   background-size: cover;
   height: 75vh;
   background-repeat: no-repeat;
-  background-position: center center;
-  position: relative; }
+  background-position: center center; }
 
 main {
-  background: #2B331B; }
+  background: #2B331B;
+  position: relative; }
 
 .main-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 50px;
-  position: relative; }
+  padding-top: 50px; }
   .main-section input[type="checkbox"] {
     opacity: 0; }
   .main-section .left-side {
     width: 30%;
-    position: relative;
-    left: 0px;
+    height: 30%;
+    left: -15px;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
-    transition: all 0.3s ease; }
+    transition: all 0.3s ease;
+    -webkit-box-shadow: 30px 9px 0px -8px #171B0E;
+    box-shadow: 30px 9px 0px -8px #171B0E; }
     .main-section .left-side .aside-image {
       position: relative;
-      left: -100px;
+      left: -110px;
       width: 125%; }
     .main-section .left-side img {
-      -webkit-box-shadow: 41px 11px 0px -19px #171B0E;
-      box-shadow: 41px 11px 0px -19px #171B0E; }
+      -webkit-box-shadow: 50px 9px 0px -3px #171B0E;
+      box-shadow: 50px 9px 0px -3px #171B0E; }
     .main-section .left-side .aside-container {
-      -webkit-box-shadow: 0px -1px 0px 8px #171B0E, 10px 5px 0 -6px #171B0E;
-      box-shadow: 0px -1px 0px 8px #171B0E, 10px 5px 0 -6px #171B0E;
       padding: 20px 0 20px 20px;
-      background-color: #171B0E; }
+      background-color: #171B0E;
+      width: 100%; }
       .main-section .left-side .aside-container h4 {
         color: #FFD300; }
         .main-section .left-side .aside-container h4:first-of-type {
@@ -478,7 +477,7 @@ main {
     width: 70%;
     position: relative;
     top: -200px;
-    right: -90px; }
+    right: -100px; }
     .main-section .right-side .blog-article img {
       -webkit-box-shadow: -20px 20px 0px -4px #FFD300;
       box-shadow: -20px 20px 0px -4px #FFD300;
@@ -521,8 +520,7 @@ main {
   background-size: cover;
   height: 75vh;
   background-repeat: no-repeat;
-  background-position: center center;
-  position: relative; }
+  background-position: center center; }
 
 .contact-section {
   display: -webkit-box;
@@ -639,25 +637,23 @@ footer {
     .section-1-part-2 li i {
       height: 15%; }
   .section-2
-img {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
-  -image {
+.article-1-image {
+    position: static; }
+  .article-2-image {
     position: static; }
   .main-section .left-side {
     left: -700px;
     position: absolute;
-    width: 50%; }
-    .main-section .left-side img {
-      -webkit-box-shadow: none;
-      box-shadow: none; }
+    width: 500px;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
     .main-section .left-side .aside-image {
-      left: 0;
-      width: 100%; }
+      left: 0; }
     .main-section .left-side .aside-container {
       padding: 20px;
       -webkit-box-shadow: none;
-      box-shadow: none; }
+      box-shadow: none;
+      width: 100%; }
   .main-section input[type="checkbox"]:checked + .left-side {
     left: 0;
     z-index: 10; }
@@ -732,6 +728,11 @@ img {
     margin: 20px 0; }
     .section-6 ul li:nth-of-type(2) {
       margin: 0; }
+  .main-section .left-side .aside-image {
+    left: -75px; }
+    .main-section .left-side .aside-image img {
+      -webkit-box-shadow: 38px 9px 0px -3px #171B0E;
+      box-shadow: 38px 9px 0px -3px #171B0E; }
   .blog-bottom {
     padding: 50px 10px; }
     .blog-bottom .comment-section {
@@ -770,9 +771,16 @@ img {
   .section-1-part-2 li i {
     width: 10%; }
   .main-section .left-side {
-    width: 100%; }
+    display: none;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+    .main-section .left-side .aside-img img {
+      -webkit-box-shadow: none;
+      box-shadow: none; }
   .main-section .right-side .blog-article-container {
-    padding: 20px; }
+    padding: 20px;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
   form {
     margin: 0 20px; }
     form input[type=text],
@@ -792,8 +800,6 @@ img {
   nav {
     letter-spacing: 0;
     font-size: 1.6rem; }
-  .main-section input[type="checkbox"] {
-    display: none; }
   .main-section .right-side {
     position: static; }
     .main-section .right-side .blog-article img {

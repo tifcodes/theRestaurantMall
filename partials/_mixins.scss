@@ -11,7 +11,7 @@ $secondary-font-color: #0F0F0F;
     height: $height;
     background-repeat: no-repeat;
     background-position: center center;
-    position: relative;   
+    // position: relative;   
 }
 
 @mixin fontSize ($font-size, $line-height, $font-weight, $text-transform) {

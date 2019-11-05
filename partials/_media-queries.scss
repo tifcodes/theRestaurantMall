@@ -10,8 +10,10 @@
         width: 95%;
     }
 
-    .header-img {
-        display:none;
+    header{ 
+        .header-img {
+            width: 400px;
+        }
     }
 
     .section-1-part-1,
@@ -23,13 +25,11 @@
 
     .section-2 
         .article-1-image {
-            // left: -25px;
-            // top: 0;
-            flex-shrink: 0;
+            left: -25px;
+            top: 0;
         }
         .article-2-image {
-            // margin-top: 0;
-            // top: 0;  
+            margin-top: 0;
         }
     
     .main-section {
@@ -204,11 +204,6 @@
 }
 
 @media (max-width: 560px) {
-
-}
-
-
-@media (max-width: 560px) {
     h1 {
         font-size: 5.5rem;
     }
@@ -270,6 +265,11 @@
         font-size: 1.6rem;
     }
 
+    header{ 
+        .header-img {
+            bottom: -50px;
+        }
+    }
     .main-section {
         .right-side {
             position: static;
@@ -285,3 +285,4 @@
         }
     }
 }
+

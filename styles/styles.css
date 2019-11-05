@@ -281,7 +281,7 @@ header i.fa-bars {
 .header-img {
   width: 50%;
   position: absolute;
-  top: 30%;
+  bottom: -100px;
   right: 0; }
 
 .section-1 {
@@ -633,15 +633,17 @@ footer {
 @media (max-width: 1075px) {
   .wrapper {
     width: 95%; }
-  .header-img {
-    display: none; }
+  header .header-img {
+    width: 400px; }
   .section-1-part-1 li,
   .section-1-part-2 li {
     display: inline; }
   .section-2
 .article-1-image {
-    -ms-flex-negative: 0;
-    flex-shrink: 0; }
+    left: -25px;
+    top: 0; }
+  .article-2-image {
+    margin-top: 0; }
   .main-section .left-side {
     left: -700px;
     position: absolute;
@@ -790,6 +792,8 @@ footer {
   nav {
     letter-spacing: 0;
     font-size: 1.6rem; }
+  header .header-img {
+    bottom: -50px; }
   .main-section .right-side {
     position: static; }
     .main-section .right-side .blog-article img {

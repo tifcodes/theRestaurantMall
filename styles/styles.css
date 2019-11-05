@@ -263,6 +263,9 @@ h1 {
   -ms-flex-direction: column;
   flex-direction: column; }
 
+input[type="checkbox"] {
+  display: none; }
+
 header i.fa-bars {
   position: absolute;
   top: 50px;
@@ -458,8 +461,8 @@ main {
       left: -110px;
       width: 125%; }
     .main-section .left-side img {
-      -webkit-box-shadow: 48px 9px 0px -3px #171B0E;
-      box-shadow: 48px 9px 0px -3px #171B0E; }
+      -webkit-box-shadow: 48px 5px 0px -3px #171B0E;
+      box-shadow: 48px 5px 0px -3px #171B0E; }
     .main-section .left-side .aside-container {
       padding: 20px 0 20px 20px;
       background-color: #171B0E;
@@ -673,13 +676,40 @@ footer {
   img {
     margin: 0 auto; }
   h1 {
-    font-size: 6.5rem; }
+    font-size: 6.5rem;
+    margin: 140px 20px; }
   .restaurant {
     height: 6.5rem; }
-  header nav {
-    opacity: 0; }
+  header nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background: #171B0E;
+    opacity: .9;
+    position: absolute;
+    z-index: 10;
+    width: 100px;
+    opacity: 0;
+    right: 0px;
+    top: 0;
+    height: 75vh;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+    header nav ul li {
+      margin: 30px auto; }
+  input[type="checkbox"]:checked + ul {
+    opacity: 1; }
   header i.fa-bars {
-    visibility: visible; }
+    visibility: visible;
+    position: fixed;
+    top: 50px;
+    left: 30px;
+    color: white;
+    z-index: 20; }
+  .header-index nav ul {
+    height: 95vh; }
   .read-more {
     display: block;
     margin: 20px auto; }
@@ -782,11 +812,12 @@ footer {
 
 @media (max-width: 425px) {
   h1 {
-    font-size: 4rem; }
+    font-size: 4rem;
+    margin: 140px 0; }
   .restaurant {
     height: 4rem; }
   h2 {
-    font-size: 3.4rem; }
+    font-size: 3.2rem; }
   h3 {
     font-size: 3rem; }
   nav {

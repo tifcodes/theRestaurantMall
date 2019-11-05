@@ -15,6 +15,8 @@
     <header class="contact-header">
         <div class="wrapper">
             <nav>
+                <label for="toggle"><i class="fa fa-bars"></i> </label>
+                <input type="checkbox" id="toggle" name="toggle">
                 <ul>
                     <li> <a href="index.html"> Home </a> </li>
                     <li> <a href="#about"> About </a></li>
@@ -22,39 +24,42 @@
                     <li> <a href="contact.html"> Contact </a></li>
                 </ul>
             </nav>
-            <i class="fa fa-bars"></i>
             <h1> get in touch </h1>
         </div>
     </header>
     <main>
         <div class="wrapper contact-section">
-            <section class = "social-section">
+            <section class="social-section">
                 <ul class="social">
                     <li>
-                        <a href="https://www.facebook.com/therestaurantmall/" target="_blank">
-                            <i class="fab fa-facebook-f"></i>
+                        <a href="https://www.facebook.com/therestaurantmall/" target="_blank"
+                            aria-label="Go to The Restaurant Mall's Facebook Page">
+                            <i aria-hidden class="fab fa-facebook-f"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://instagram.com/therestaurantmall/" target="_blank">
-                            <i class="fab fa-instagram"></i>
+                        <a href="https://instagram.com/therestaurantmall/" target="_blank"
+                            aria-label="Go to The Restaurant Mall's Instagram Page">
+                            <i aria-hidden class="fab fa-instagram"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://twitter.com/therestaurantmall" target="_blank">
-                            <i class="fab fa-twitter"></i>
+                        <a href="https://twitter.com/therestaurantmall" target="_blank"
+                            aria-label="Go to The Restaurant Mall's Twitter Page">
+                            <i aria-hidden class="fab fa-twitter"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://whatsapp.com/therestaurantmall/" target="_blank">
-                            <i class="fab fa-whatsapp"></i>
+                        <a href="https://whatsapp.com/therestaurantmall/" target="_blank"
+                            aria-label="Go to The Restaurant Mall's Whatsapp">
+                            <i aria-hidden class="fab fa-whatsapp"></i>
                         </a>
                     </li>
                 </ul>
                 <div class="contact">
                     <address class="contact-text">
                         <p><a href="mailto:info@email.com">
-                            info@email.com </a></p>
+                                info@email.com </a></p>
                         <p><a href="123-456-7890"> 123-456-7890</a></p>
                         <p> 123 Queen Street West, Unit 10 </p>
                         <p> Toronto, Ontario </p>
@@ -65,13 +70,14 @@
             <section>
                 <form action="submit">
                     <label for="name" class="visuallyHidden"> Name </label>
-                    <input type="text" name="name" placeholder="Name" autocomplete = "off" required>
+                    <input type="text" name="name" placeholder="Name" autocomplete="off" required>
 
                     <label for="emailAddress" class="visuallyHidden"> Email Address </label>
-                    <input type="email" name="email" placeholder="Email Address" autocomplete = "off" required>
+                    <input type="email" name="email" placeholder="Email Address" autocomplete="off" required>
 
                     <label for="message" class="visuallyHidden"> Message </label>
-                    <textarea name="message" placeholder="Message" cols=30 rows=15 autocomplete = "off" required></textarea>
+                    <textarea name="message" placeholder="Message" cols=30 rows=15 autocomplete="off"
+                        required></textarea>
 
                     <input type="submit" value="Submit">
                 </form>

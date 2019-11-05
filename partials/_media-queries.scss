@@ -78,19 +78,49 @@
 
     h1 {
         font-size: 6.5rem;
+        margin: 140px 20px;
     }
 
     .restaurant {
         height: 6.5rem;
     }
 
-    header nav {
+    header nav ul {
+        flex-direction: column;
+        background: $secondary-background-color;
+        opacity: .9;
+        position: absolute;
+        z-index: 10;
+        width: 100px; 
         opacity: 0;
+        right: 0px; 
+        top: 0;
+        height: 75vh;
+        transition: all 0.5s; 
+        li {
+            margin: 30px auto;
+        }
+    }
+
+    input[type="checkbox"]:checked + ul {
+        opacity: 1;
     }
 
     header i.fa-bars {
         visibility: visible;
+        position: fixed;
+        top: 50px;
+        left: 30px;
+        color: white;
+        z-index: 20;
     }
+
+    .header-index {
+        nav ul {
+            height: 95vh;
+        }
+    }
+    
 
     .read-more {
         display: block;
@@ -246,13 +276,14 @@
 @media (max-width: 425px) {
     h1 {
         font-size: 4rem;
+        margin: 140px 0;
     }
     .restaurant {
         height: 4rem;
     }
 
     h2 {
-        font-size: 3.4rem;
+        font-size: 3.2rem;
     }
 
     h3 {

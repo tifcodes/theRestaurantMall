@@ -5,7 +5,8 @@
         background: $accent-color;
         padding: 1%;
         border-radius: 50%;
-        height: 22%;
+        height: 40px;
+        width: 40px;
         color: $secondary-font-color;
         margin-top: 25px;
         margin-right: 10px;
@@ -20,14 +21,10 @@
         width: 50%;
         display: flex;
         flex-wrap: wrap;
-        i {
-            width: calc(10% - 10px);
-        }
         div {
             width: 90%;
         }
     }
 }
-
 
 

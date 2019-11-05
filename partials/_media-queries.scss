@@ -18,21 +18,18 @@
     .section-1-part-2 {
         li {
             display: inline;
-            i {
-                height: 15%;
-            }
         }
     }
 
     .section-2 
         .article-1-image {
-            left: -25px;
-            top: 0;
+            // left: -25px;
+            // top: 0;
+            flex-shrink: 0;
         }
         .article-2-image {
-            margin-top: 0;
-            bottom: 25px;
-            
+            // margin-top: 0;
+            // top: 0;  
         }
     
     .main-section {
@@ -116,6 +113,7 @@
             width: 100%;
             position: static;
             margin-right: 0;
+            min-height: auto;
         }
         &-container {
             width: 100%;
@@ -131,9 +129,13 @@
             width: 100%;
             position: static;
             margin-left: 0;
+            min-height: auto;
         }
         &-container {
+            text-align: left;
             width: 90%;
+            margin: 50px;
+
         }
     }
 
@@ -202,7 +204,25 @@
 }
 
 @media (max-width: 560px) {
-    .main-section{
+
+}
+
+
+@media (max-width: 560px) {
+    h1 {
+        font-size: 5.5rem;
+    }
+    .restaurant {
+        height: 5.5rem;
+    }
+
+    .section-2 {
+        .article-2-container{
+            width: 80%;
+        }
+    }
+
+    .main-section {
         .left-side {
             display: none;
             box-shadow: none;
@@ -212,26 +232,6 @@
             }
         }
     }
-    }
-}
-
-
-@media (max-width: 500px) {
-    h1 {
-        font-size: 5.5rem;
-    }
-    .restaurant {
-        height: 5.5rem;
-    }
-
-    .section-1-part-1,
-    .section-1-part-2 {
-            li i {
-                width: 10%;
-            }
-    }
-
-    .main-section {
         .right-side .blog-article-container{
             padding: 20px;
             box-shadow: none;
@@ -271,9 +271,6 @@
     }
 
     .main-section {
-        // input[type="checkbox"] {
-        //     display:none;
-        // }
         .right-side {
             position: static;
             .blog-article {

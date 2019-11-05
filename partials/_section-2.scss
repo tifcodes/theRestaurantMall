@@ -14,11 +14,12 @@
         top: -50px;
         left: -100px;
         width: 50%;
+        min-height: 500px;
         
     }
     &-container {
-        margin: 50px 30px;
-        width: calc(50% - 60px);
+        margin: 50px 40px 50px 60px;
+        width: calc(50% - 100px);
     }
 }
 
@@ -30,14 +31,16 @@
     }
     &-image {
         position: absolute;
-        bottom: -50px;
+        bottom: -150px;
         right: 0px;
         margin-left: 60px;
         width: calc(50% - 60px);
+        min-height: 500px;
+
     }
     &-container {
         text-align: right;
-        margin: 50px 70px 50px 0px;
+        margin: 50px 70px 50px -25px;
         width: calc(50% - 70px);
     }
 }

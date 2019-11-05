@@ -13,8 +13,8 @@
         position: relative;
         top: -50px;
         left: -100px;
-        margin-right: 60px;
-        width: calc(50% - 60px);
+        width: 50%;
+        
     }
     &-container {
         margin: 50px 30px;
@@ -36,8 +36,9 @@
         width: calc(50% - 60px);
     }
     &-container {
-        margin: 50px 30px;
-        width: calc(50% - 60px);
+        text-align: right;
+        margin: 50px 70px 50px 0px;
+        width: calc(50% - 70px);
     }
 }
 

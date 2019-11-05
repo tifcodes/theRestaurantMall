@@ -30,7 +30,8 @@
             top: 0;
         }
         .article-2-image {
-            bottom: 0;
+            margin-top: 0;
+            bottom: 25px;
             
         }
     
@@ -161,10 +162,12 @@
 
     .main-section {
         .left-side {
+            width: 75%;
             .aside-image {
-                left: -75px;
+                left: -85px;
                 img {
-                    box-shadow: 38px 9px 0px -3px $secondary-background-color;
+                    box-shadow:none;
+                    // box-shadow: 38px 9px 0px -3px $secondary-background-color;
                 }
             }
         }

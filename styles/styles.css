@@ -184,6 +184,17 @@ img {
   width: 85%;
   margin: 0 auto; }
 
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black; }
+
+.skip-link:focus {
+  left: 0; }
+
 h1 {
   font-size: 6.9rem;
   line-height: normal;
@@ -685,15 +696,17 @@ footer {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
     position: fixed;
     background: #171B0E;
-    opacity: .9;
     z-index: 10;
     width: 100px;
     opacity: 0;
     right: 0px;
     top: 0;
-    height: 75vh;
+    height: 100vh;
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s; }

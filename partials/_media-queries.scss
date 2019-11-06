@@ -87,15 +87,15 @@
 
     header nav ul {
         flex-direction: column;
+        justify-content: space-evenly;
         position: fixed;
         background: $secondary-background-color;
-        opacity: .9;
         z-index: 10;
         width: 100px; 
         opacity: 0;
         right: 0px; 
         top: 0;
-        height: 75vh;
+        height: 100vh;
         transition: all 0.5s; 
         li {
             margin: 30px auto;

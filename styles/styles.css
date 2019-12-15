@@ -291,7 +291,7 @@ header i.fa-bars {
   display: -ms-inline-flexbox;
   display: inline-flex;
   height: 6.9rem;
-  padding: 5px;
+  padding: 10px 5px;
   margin-bottom: 10px; }
 
 .header-img {

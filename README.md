@@ -1,4 +1,4 @@
-![theRestaurantMall]
+![theRestaurantMall](https://github.com/tifcodes/tiffany-wong-project-2/blob/master/assets/The%20Restaurant%20Mall.jpg)
 
 ## The Restaurant Mall
 

@@ -95,7 +95,7 @@
         opacity: 0;
         right: 0px; 
         top: 0;
-        height: 100vh;
+        min-height: 100vh;
         transition: all 0.5s; 
         li {
             margin: 30px auto;
@@ -110,9 +110,9 @@
         visibility: visible;
         position: fixed;
         top: 50px;
-        left: 30px;
+        right: 45px;
         color: white;
-        z-index: 20;
+        z-index: 30;
     }
 
     .header-index {
